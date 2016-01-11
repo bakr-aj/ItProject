@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+         <link rel="stylesheet" type="text/css" href="stylesheet/signUp.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+        <script src="Script/jquery-1.11.3.min.js"></script>
+        <script src="Script/jquery.tabSlideOut.v1.3.js"></script>
+        <script src="Script/Scripts.js"></script>
+		<title>The Shop</title>
+	</head>
+<body>
+    <div id="WHOLE">
+<header>
+	<div class="header">
+	   <a href="#" id="Logo">Company Name</a>
+		<form class="Search">
+			<input id="searchBox" title="Search" type="text" name="search" placeholder="SEARCH">
+            <select id="searchButton" >
+                <option>By Name</option>
+                <option>By Color</option>
+            </select>
+			<button id="searchButton" type="submit" value="Search">Search</button>
+		</form>
+
+		<div id="Login">
+			<button type="submit">Login</button>
+        </div>
+                    <!--login form-->
+        
+    <div class="wrapper">
+    <div id="black_overlay" style="width: 100%;">
+    </div>
+    <div class="added">
+            <img src="Resources/m_close-icon.png" width="20" height="20" class="close" />
+            <h3>Log in</h3>
+            <form method="post" action="login.php">
+                <input type="text" id="vname" name="name" placeholder="Your Name">
+                <input type="password" id="vemail" name="Password" placeholder="Your Password">
+                <button type="submit" id="submit" onclick="check()">Login</button>
+            </form>
+        </div>
+    </div>
+<!--end of form-->
+        </div>
+	</header>
+        <div class="barOrderList">
+        <h1 id="orderHeader">Order List</h1>
+            <a class="handle" href="http://link-for-non-js-users.html">Order</a>
+            <table id="orderList">
+                <tr>
+                <td>1</td>
+                    <td>price</td>
+                    <td>size</td>
+                    <td>color</td>
+                    <td><img class="deleteOrder" src="Resources/deletered.png" height="20" width="20" onclick="deleteRow(this)"> </td>
+                </tr>
+                <tr>
+                <td>1</td>
+                    <td>price</td>
+                    <td>size</td>
+                    <td>color</td>
+                    <td><img  class="deleteOrder" src="Resources/deletered.png" height="20" width="20" onclick="deleteRow(this)"> </td>
+                </tr>
+                <tr>
+                <td>1</td>
+                    <td>price</td>
+                    <td>size</td>
+                    <td>color</td>
+                    <td><img class="deleteOrder" src="Resources/deletered.png" height="20" width="20" onclick="deleteRow(this)"> </td>
+                </tr>
+                <tr>
+                <td>1</td>
+                    <td>price</td>
+                    <td>size</td>
+                    <td>color</td>
+                    <td><img class="deleteOrder" src="Resources/deletered.png" height="20" width="20" onclick="deleteRow(this)"> </td>
+                </tr>
+                <tr>
+                <td>1</td>
+                    <td>price</td>
+                    <td>size</td>
+                    <td>color</td>
+                    <td> <img class="deleteOrder" src="Resources/deletered.png" height="20" width="20" onclick="deleteRow(this)"></td>
+                </tr>
+            </table>
+<div id="orderFooter">
+<span id="totall">0</span>
+    <button id="submitOrder" type="submit" value="Purchase">Submit Order</button>
+</div>
+        </div>
+<!--
+	<div class="slide-out-div">
+            <a class="handle" href="http://link-for-non-js-users.html">Content</a>
+            <h3>Contact me</h3>
+            <p>Thanks for checking out my jQuery plugin, I hope you find this useful.
+            </p>
+            <p>This can be a form to submit feedback, or contact info</p>
+        </div>
+-->
+    <div class="browse">
+        <div class="item">
+            <img src="Resources/DUDE.jpg" alt="This is a dude">
+            <div class="itemInfo">
+                <table id="info">
+                    <tr>
+                        <td>price:<spin class="price">1000$</spin></td>
+                       <td>size<select>
+                            <option value="50">50</option>
+                            <option value="40">40</option>
+                            <option value="20">50</option>
+                            <option value="10">50</option>
+                        </select></td>
+                        <td>color<select>
+                            <option value="orange"><img src="DUDE.jpg" height="5" width="5"></option>
+                        </select></td>
+                        </tr>
+                    </table>
+		<button type="submit" onclick="addRow(this)">Add Item</button>
+            </div>	
+        </div>
+        <div class="item">
+            <img src="Resources/DUDE.jpg" alt="This is a dude">
+            <div class="itemInfo">
+                <table id="info">
+                    <tr>
+                        <td>price:<spin class="price">1000$</spin></td>
+                       <td>size<select>
+                            <option value="50">50</option>
+                            <option value="40">40</option>
+                            <option value="20">50</option>
+                            <option value="10">50</option>
+                        </select></td>
+                        <td>color<select>
+                            <option value="orange"><img src="DUDE.jpg" height="5" width="5"></option>
+                        </select></td>
+                        </tr>
+                    </table>
+		<button type="submit" onclick="addRow(this)">Add Item</button>
+            </div>	
+        </div><div class="item">
+            <img src="Resources/DUDE.jpg" alt="This is a dude">
+            <div class="itemInfo">
+                <table id="info">
+                    <tr>
+                        <td>price:<spin class="price">1000$</spin></td>
+                       <td>size<select>
+                            <option value="50">50</option>
+                            <option value="40">40</option>
+                            <option value="20">50</option>
+                            <option value="10">50</option>
+                        </select></td>
+                        <td>color<select>
+                            <option  value="orange"><img src="DUDE.jpg" height="5" width="5"></option>
+                        </select></td>
+                        </tr>
+                    </table>
+		<button type="submit" onclick="addRow(this)">Add Item</button>
+            </div>	
+        </div><div class="item">
+            <img src="Resources/DUDE.jpg" alt="This is a dude">
+            <div class="itemInfo">
+                <table id="info">
+                    <tr>
+                        <td>price:<spin class="price">1000$</spin></td>
+                       <td>size<select>
+                            <option value="50">50</option>
+                            <option value="40">40</option>
+                            <option value="20">50</option>
+                            <option value="10">50</option>
+                        </select></td>
+                        <td>color<select>
+                            <option value="orange"><img src="DUDE.jpg" height="5" width="5"></option>
+                        </select></td>
+                        </tr>
+                    </table>
+		<button type="submit" onclick="addRow(this)">Add Item</button>
+            </div>	
+        </div><div class="item">
+            <img src="Resources/DUDE.jpg" alt="This is a dude">
+            <div class="itemInfo">
+                <table id="info">
+                    <tr>
+                        <td>price:<spin class="price">1000$</spin></td>
+                       <td>size<select>
+                            <option value="50">50</option>
+                            <option value="40">40</option>
+                            <option value="20">50</option>
+                            <option value="10">50</option>
+                        </select></td>
+                        <td>color<select>
+                            <option value="orange"><img src="DUDE.jpg" height="5" width="5"></option>
+                        </select></td>
+                        </tr>
+                    </table>
+		<button type="submit" onclick="addRow(this)">Add Item</button>
+            </div>	
+        </div><div class="item">
+            <img src="Resources/DUDE.jpg" alt="This is a dude">
+            <div class="itemInfo">
+                <table id="info">
+                    <tr>
+                        <td>price:<spin class="price">1000$</spin></td>
+                       <td>size<select>
+                            <option value="50">50</option>
+                            <option value="40">40</option>
+                            <option value="20">50</option>
+                            <option value="10">50</option>
+                        </select></td>
+                        <td>color<select>
+                            <option value="orange"><img src="DUDE.jpg" height="5" width="5"></option>
+                        </select></td>
+                        </tr>
+                    </table>
+		<button type="submit" onclick="addRow(this)">Add Item</button>
+            </div>	
+        </div><div class="item">
+            <img src="Resources/DUDE.jpg" alt="This is a dude">
+            <div class="itemInfo">
+                <table id="info">
+                    <tr>
+                        <td>price:<spin class="price">1000$</spin></td>
+                       <td>size<select>
+                            <option value="50">50</option>
+                            <option value="40">40</option>
+                            <option value="20">50</option>
+                            <option value="10">50</option>
+                        </select></td>
+                        <td>color<select>
+                            <option value="orange"><img src="DUDE.jpg" height="5" width="5"></option>
+                        </select></td>
+                        </tr>
+                    </table>
+		<button type="submit" onclick="addRow(this)">Add Item</button>
+            </div>	
+        </div><div class="item">
+            <img src="Resources/DUDE.jpg" alt="This is a dude">
+            <div class="itemInfo">
+                <table id="info">
+                    <tr>
+                        <td>price:<spin class="price">1000$</spin></td>
+                       <td>size<select>
+                            <option value="50">50</option>
+                            <option value="40">40</option>
+                            <option value="20">50</option>
+                            <option value="10">50</option>
+                        </select></td>
+                        <td>color<select>
+                            <option value="orange"><img src="DUDE.jpg" height="5" width="5"></option>
+                        </select></td>
+                        </tr>
+                    </table>
+		<button type="submit" onclick="addRow(this)">Add Item</button>
+            </div>	
+        </div><div class="item">
+            <img src="Resources/DUDE.jpg" alt="This is a dude">
+            <div class="itemInfo">
+                <table id="info">
+                    <tr>
+                        <td>price:<spin class="price">1000$</spin></td>
+                       <td>size<select>
+                            <option value="50">50</option>
+                            <option value="40">40</option>
+                            <option value="20">50</option>
+                            <option value="10">50</option>
+                        </select></td>
+                        <td>color<select>
+                            <option value="orange"><img src="DUDE.jpg" height="5" width="5"></option>
+                        </select></td>
+                        </tr>
+                    </table>
+		<button type="submit" onclick="addRow(this)">Add Item</button>
+            </div>	
+        </div><div class="item">
+            <img src="Resources/DUDE.jpg" alt="This is a dude">
+            <div class="itemInfo">
+                <table id="info">
+                    <tr>
+                        <td>price:<spin class="price">1000$</spin></td>
+                       <td>size<select>
+                            <option value="50">50</option>
+                            <option value="40">40</option>
+                            <option value="20">50</option>
+                            <option value="10">50</option>
+                        </select></td>
+                        <td>color<select>
+                            <option value="orange"><img src="DUDE.jpg" height="5" width="5"></option>
+                        </select></td>
+                        </tr>
+                    </table>
+		<button type="submit" onclick="addRow(this)">Add Item</button>
+            </div>	
+        </div>
+
+        
+        </div>
+    <div id="footer">
+    <footer>
+    COPY RIGHT &reg; SAED&BAKR
+    </footer>
+        </div>
+        </div>
+</body>
+</html>

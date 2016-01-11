@@ -1,0 +1,28 @@
+#profileimg img{
+	border-radius: 5%;
+	margin-left: 2%;
+	margin-top: 1.5%;
+	float: left;
+	width: 10%;
+	height: 10%;
+}
+#tableinfo{
+	margin-left: 20%;
+}
+#tableinfo input{
+	width: 95%;
+}
+table{
+	padding: 1%;
+	/*border:2px black solid;*/
+	border-radius: 10px;
+}
+#tablebody{
+}
+.profileinfo{
+	height: auto;
+}
+#menu{
+	width: auto;
+}
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/signUp.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/myProfile.css">
+	<script src="Script/jquery-1.11.3.min.js"></script>
+        <script src="Script/jquery.tabSlideOut.v1.3.js"></script>
+        <script src="Script/Scripts.js"></script>
+</head>
+<body>
+<header>
+	<div class="header">
+	   <a href="#" id="Logo">Company Name</a>
+		<form class="Search">
+			<input id="searchBox" title="Search" type="text" name="search" placeholder="SEARCH">
+			<button id="searchButton" type="submit" value="Search">Search</button>
+		</form>
+		<select id="menu">
+			<option>Home Page</option>
+			<option></option>
+		</select>
+        </div>
+	</header>
+<section>
+<div class="wrapper">
+	<div id="black_overlay" style="width: 100%;">
+	</div>
+	<div class="added">
+			<img src="resources/m_close-icon.png" width="20" height="20" class="close" />
+    		<h3>Info</h3>
+    		<form method="post" action="">
+    			<input type="text" id="firstname" name="name" placeholder="Your FirstName">
+    			<input type="text" id="lastname" name="lastname" placeholder="Your LastName">
+    			<input type="text" id="color" name="color" placeholder="Your favoret color">
+    			<input type="text" id="size" name="size" placeholder="Your size">
+    			<input type="password" id="vemail" name="Password" placeholder="Your Password">
+    			<button type="submit" id="submit">Save</button>
+    		</form>
+    </div>
+</div>
+ </section>
+ <section id="tableinfo">
+<table>
+	<tbody id="tablebody">
+		<tr class="info">
+			<td><label>First Name:</label></td>
+			<td><input class="profileinfo" type="text" id="firstname" name="name" value="Bakr" disabled="disable"></td>
+		</tr>
+		<tr class="info">
+			<td><label>Last Name:</label></td>
+    			<td><input class="profileinfo" type="text" id="lastname" name="lastname" value="Aj" disabled="disable"></td>
+    	</tr>
+    			<tr class="info">
+			<td><label>User Name:</label></td>
+    			<td><input class="profileinfo" type="text" id="username" name="username" value="root" disabled="disable"></td>
+    			</tr>
+    			<tr class="info">
+			<td><label>Color:</label></td>
+    			<td><input class="profileinfo" type="text" id="color" name="color" value="blue" disabled="disable"></td>
+    			</tr>
+    			<tr class="info">
+			<td><label>Size:</label></td>
+    			<td><input class="profileinfo" type="text" id="size" name="size" value="35" disabled="disable"></td>
+    			</tr>
+    			<tr class="info">
+			<td><label>Password:</label></td>
+    			<td><input class="profileinfo" type="password" id="password" name="Password" value="passowrd" disabled="disable"></td>
+    			</tr>
+    			<tr class="info">
+			<td><label>Orders:</label></td>
+    			<td>
+    				<table>
+    					<tbody>
+    						<tr>
+    							<td>
+    								2/11/2015
+    							</td>
+    							<td>
+    								1000$
+    							</td>
+    						</tr>
+    						<tr>
+    							<td>
+    								2/11/2015
+    							</td>
+    							<td>
+    								1000$
+    							</td>
+    						</tr>
+    						<tr>
+    							<td>
+    								2/11/2015
+    							</td>
+    							<td>
+    								1000$
+    							</td>
+    						</tr>
+    					</tbody>
+    				</table>
+    			</td>
+    			</tr>
+    			<tr class="info">
+			<td><label>Totall:</label></td>
+    			<td><input class="profileinfo" type="text" id="totall" name="totall" value="1000" disabled="disable"></td>
+    			</tr>
+    			<tr class="info">
+					<td></td>
+	    			<td>
+	    				<div id="Login">
+	        				<h1>Edit</h1>
+	 					</div>
+	 				</td>
+    			</tr>
+    			</tbody>
+    			</table>
+</section>
+
+	<script src="Script/Scripts.js"></script>
+</body>
+</html>

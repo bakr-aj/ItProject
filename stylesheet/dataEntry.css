@@ -1,0 +1,33 @@
+#addItem{   
+    margin-left: 33.3%;
+/*    width: 40.3%;*/
+}
+#addItem select{
+    width:90px;
+    margin-left: 10px;
+}       
+.boxCount{
+    width: 80px;
+}
+.anotherRow{
+    width: inherit;
+}
+.colorSelecting:hover, .colorSelecting:active,.colorSelecting{
+    outline: none;
+}
+#listTable, #listTable td{
+    margin:auto;
+    border: 1px solid black;
+}
+#listTable td{
+    padding:0 10px;
+}
+#itemListHeader{
+    color:green;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.deleteRow{
+    cursor: pointer;
+    display: none;
+}

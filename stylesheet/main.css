@@ -1,0 +1,182 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    min-height:200px;
+    min-width:500px;
+    background-color: #FFFFFF;
+    margin: auto;
+    
+    background: #dfdfd9;
+    background: linear-gradient(to right ,#DFDFD9,gray ,#DFDFD9  );
+/*    background: linear-gradient(to right ,gray ,#DFDFD9 , gray);*/
+    }
+#WHOLE{
+    min-height:100%;
+	position:relative;
+}
+
+header{
+        font-size:25px;
+        padding:10px 0;
+        display:inline-block;
+        width:100%;
+        height:auto;
+        border-bottom:1px solid #777777;
+        margin-bottom: 10px;
+        background-color: #dfdfd9;
+    }
+input, button{
+/*width: 100%;*/
+margin:10px 0px;
+padding:5px;
+/*height:35px;*/
+border-radius:3px;
+color:#777777;
+text-shadow:0px 1px 0px #ffffff;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#colorSearch,#sizeSearch{
+    width: inherit;
+    height: inherit;
+}
+button:active {
+	position:relative;
+	top:2px;
+}
+.header button,#submitOrder{
+    background-color: #FAFAFF;
+    border-color: #FAFAFF
+}
+#Logo{
+    margin-left: 2%;
+}
+.Search{
+        width:72%;
+        height:100%;
+        display:inline-block;
+        text-align:center;
+    }
+#searchBox{
+    width: 40%;
+    height: auto;
+    }
+#searchButton{
+    width: 20%;
+}
+
+#login{
+        text-align:right;
+        width:10%;
+        display:inline-block;
+    }
+.HeaderLink{
+    font-size: 16px;
+    padding: 2px;
+    border:1px solid #a5a5a5;
+    border-radius: 5px;
+}
+.barOrderList{
+    text-align: center;
+    border-radius: 10px;
+    height: 400px;
+    max-height: 400px;
+    width: 300px;
+    background-color:#F7F7F7;
+    opacity: 0.4;
+}    
+.barOrderList:hover{
+    opacity: 1;
+}
+#orderList{
+    display: block;
+    height: 270px;
+    max-height: 270px;
+    overflow-y: auto;
+}
+#orderHeader{
+        color: #77d42a;
+    padding-bottom: 10px;
+    font-size: 2em;
+    font-family: Impact, Charcoal, sans-serif;
+    border-bottom: 3px solid #777;
+}
+.barOrderList td,.barOrderList tr {
+    color:black;
+    width: 300px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border-bottom: 1px solid #777;
+}
+.deleteOrder{
+    cursor: pointer;
+}
+.deleteOrder:hover{
+    top:2px;
+}
+#orderFooter{
+    border-top: 1px solid #777;
+}
+.browse{
+    padding: 10px;
+    margin-left: 10%;
+    padding: 20px;
+}
+.item{
+    background-color: #dfdfd9;
+    width:246px;
+    height: 350px;
+    border: 2px solid #777777;
+    margin: 5px;
+    padding: 2px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+}
+.item img{
+    width:240px;
+    height:230px;
+    margin: 2px;
+}
+.itemInfo{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 13px;
+    border-top: 1px solid #777777;
+    padding: 3px;
+    text-align: center;
+}
+.itemInfo select{
+    margin: 3px;
+    margin-right: 10px;
+}
+
+
+.itemInfo button{
+    width: 100%;
+    margin-top: 10px;
+    background: #77d42a ;
+    border:1px solid #268a16;
+    background-color:#77d42a;
+    color:#306108;
+    text-shadow:0px 1px 0px #aade7c;
+    border-radius: 5px;
+}
+#imageAddedItem{
+    display:none;
+    position:fixed;
+    bottom:30px;
+    left:20px;
+}
+#footer{
+	width:100%;
+	height:20px;
+    margin-top: 20px;
+	position:absolute;
+	bottom:0;
+	left:0;
+    text-align: center;
+    border-top: solid 1px #777777;
+}

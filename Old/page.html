@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/login.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+ <script>
+ 		$(document).ready(function() {
+            $(".Login").click(function() {
+					var h = $("body").height() + 'px';
+             	    $("#black_overlay").css({"height":h,"visibility":"visible"});
+					$(".added").css('display','block');
+			});
+			$(".close, #submit").click(function() {
+				$(".added").css('display','none');
+				$("#black_overlay").css("visibility","hidden");
+			});
+			
+        });
+ </script>
+</head>
+<body>
+	<!-- page wrapper starts here -->
+<div class="wrapper">
+	<div id="black_overlay" style="width: 100%;"> </div>
+		<div class="added">
+			<img src="m_close-icon.png" width="20" height="20" class="close" />
+    		<h3>Contact Form</h3>
+    		<form method="post" action="">
+    			<input type="text" id="vname" name="name" placeholder="Your Name">
+    			<input type="text" id="vemail" name="email" placeholder="Your Email">
+    			<input type="password" id="vemail" name="Password" placeholder="Your Password">
+    			<input type="button" value="Submit" id="submit" >
+    		</form>
+</div>
+<div class="Login" >
+        <h1>Login</h1>
+ </div>
+  <!-- header starts here -->
+</body>
+</html>
